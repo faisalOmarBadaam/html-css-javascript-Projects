@@ -1,0 +1,145 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  font-family: sans-serif;
+}
+body {
+  background-color: rgb(10, 10, 10);
+  display: flex;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.profile h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.img-box {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid white;
+  flex-shrink: 0;
+}
+.img-box img {
+  width: 100%;
+}
+.menu {
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: #123;
+  width: 60px;
+  height: 97vh;
+  padding: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.menu:hover {
+  width: 260px;
+}
+ul {
+  list-style: none;
+  height: 95%;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  transition: 0.5s;
+}
+
+ul li a:hover,
+.active-one,
+.data-info .box:hover,
+td:hover {
+  background-color: #ffffff55;
+}
+
+.sign-out {
+  width: 90%;
+  background-color: red;
+}
+ul li a i {
+  font-size: 30px;
+}
+.content {
+  width: 100%;
+  margin: 10px;
+}
+.title-info {
+  background-color: rgb(24, 58, 92);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin: 10px 0px;
+}
+.data-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.data-info .box {
+  background-color: #123;
+  height: 150px;
+  flex-basis: 150px;
+  flex-grow: 1;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.data-info .box {
+  font-size: 40px;
+}
+
+.data-info .box .data {
+  text-align: center;
+}
+.data-info .box .data {
+  font-size: 30px;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  border-spacing: 8px;
+  margin-top: -6px;
+}
+td,
+th {
+  background-color: #123;
+  height: 40px;
+  border-radius: 8px;
+}
+th {
+  background-color: rgb(24, 58, 92);
+}
+
+.price,
+.count {
+  padding: 6px;
+  border-radius: 6px;
+}
+.price {
+  background-color: green;
+}
+.count {
+  background-color: gold;
+  color: black;
+}
