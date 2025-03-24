@@ -1,0 +1,81 @@
+* {
+  color: white;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: linear-gradient(to right, #01022d, #000);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.container {
+  background-image: linear-gradient(to right, #01022de5 30%, #00000088),
+    url("index.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 95%;
+  /* height: 90%; */
+  margin: 2% 0;
+}
+.container:hover {
+  background-image: linear-gradient(to right, #01022de5 30%, transparent),
+    url("index.webp");
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.logo {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  width: 60%;
+}
+ul a {
+  border-bottom: 2px solid transparent;
+}
+ul a:hover {
+  border-bottom-color: white;
+}
+a {
+  text-decoration: none;
+}
+.content {
+  width: 50%;
+  margin-top: 50px;
+  padding: 30px;
+  text-align: left;
+}
+.content h2 {
+  font-size: 100px;
+  text-transform: uppercase;
+}
+p {
+  letter-spacing: 3px;
+  width: 400px;
+  padding: 20px 0px;
+}
+.content button {
+  font-size: 30px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  color: black;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.content button:hover {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
