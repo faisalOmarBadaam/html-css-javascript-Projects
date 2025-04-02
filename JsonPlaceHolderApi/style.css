@@ -1,0 +1,90 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background: linear-gradient(to right, rgb(37, 54, 148), rgb(143, 69, 69));
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.content {
+  margin-bottom: 15px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+li {
+  list-style: none;
+}
+.users {
+  width: 20%;
+  height: 90vh;
+}
+.users ul {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.users ul li {
+  margin: 8px;
+  width: 100%;
+}
+.users ul li button {
+  width: 100%;
+  text-align: start;
+  border-radius: 25px;
+  padding: 3px 15px;
+  text-transform: capitalize;
+  display: inline-block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.users ul li button:hover,
+.selected {
+  border: 3px rgb(255, 166, 0) solid;
+}
+
+.posts {
+  background-color: rgb(227, 223, 223);
+  width: 60%;
+  height: 80vh;
+  overflow: auto;
+  overflow-x: hidden;
+  padding: 10px 0px;
+  margin-top: 15px;
+}
+.post {
+  margin: 10px auto;
+  background-color: white;
+  width: 90%;
+  border-radius: 5px;
+  padding: 10px;
+  height: fit-content;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.post:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.post hr {
+  margin: 5px 0px;
+}
+.progress-container {
+  width: 89%;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+.progress-bar {
+  width: 0%;
+  height: 30px;
+  background-color: #4caf50;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  transition: width 0.3s ease;
+}
