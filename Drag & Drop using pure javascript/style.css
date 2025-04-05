@@ -1,0 +1,79 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+body {
+  background: #928cff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  height: 100vh;
+}
+.inputs {
+  padding: 25px 35px;
+  width: 20%;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+.inputs h2 {
+  margin-bottom: 10px;
+  font-weight: 1000;
+  font-size: 32px;
+}
+.inputs .data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+}
+.inputs .data input {
+  width: 100%;
+  padding: 4px 4px;
+  outline: none;
+  border: 1px solid #928cff;
+}
+.inputs .data button {
+  width: 100%;
+  padding: 5px 0px;
+  background: #8c76d3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.box-conteiner {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.box {
+  background-color: white;
+  padding: 10px;
+  border-radius: 12px;
+  width: 200px;
+  text-align: center;
+}
+.box .item {
+  background-color: #928cff;
+  padding: 10px;
+  margin: 4px;
+  cursor: move;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.box .item.dragging {
+  opacity: 0.5;
+}
+
+.box.drag-over {
+  background-color: #f0f0f0;
+  transition: background-color 0.3s;
+}
